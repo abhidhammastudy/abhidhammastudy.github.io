@@ -1,0 +1,1 @@
+import{_ as o}from"./preload-helper.CVfkMyKi.js";import{o as e}from"./three.module.BxKVSryP.js";window.THREE=e;const t=o(()=>import("./models3d.UNUAZp3q.js"),[]),i=Object.freeze(Object.defineProperty({__proto__:null,ready:t},Symbol.toStringTag,{value:"Module"}));export{i as t};

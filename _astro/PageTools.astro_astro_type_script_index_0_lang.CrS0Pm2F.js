@@ -1,0 +1,1 @@
+import{t as d,s as i,i as o}from"./progress.BsP3mCOy.js";const t=document.querySelector("[data-save]");if(t){const{title:a,kind:s}=JSON.parse(t.dataset.save);d(a,s);const n=()=>{const e=o();t.setAttribute("aria-pressed",String(e)),t.textContent=(e?"★ ":"☆ ")+(e?t.dataset.on:t.dataset.off)};n(),t.addEventListener("click",()=>{i(!o(),a,s),n()})}

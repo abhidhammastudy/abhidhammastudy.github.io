@@ -1,0 +1,945 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Abhidhamma Atlas</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="A visual, seven-level study atlas of the Theravāda Abhidhamma, after Bhikkhu Bodhi's Comprehensive Manual.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400&family=Noto+Sans:wght@400;500;600;700&family=Noto+Serif+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap">
+<link rel="stylesheet" href="atlas.css" data-inline>
+</head>
+<body>
+<main>
+<section class="sheet cover" id="cover">
+  <div class="ph"><span><b>Abhidhamma Atlas</b> · a visual companion</span><span>After Bhikkhu Bodhi's <i>Comprehensive Manual</i></span></div>
+  <div style="display:grid;gap:8px">
+    <h1>Abhidhamma Atlas</h1>
+    <p class="sub">Mind, matter and the conditions that join them: fifteen plates on a seven-level path, with tools for slow study</p>
+  </div>
+  <div class="fig">
+    <svg id="cover-svg" viewBox="0 0 640 560" style="max-width:236px;margin:0 auto" role="img" aria-label="The 89 kinds of consciousness arranged in four rings by plane, around Nibbāna"></svg>
+    <div class="legend" style="justify-content:center">
+      <span><i style="background:var(--bad)"></i>unwholesome 12</span>
+      <span><i style="background:var(--nama)"></i>wholesome 17</span>
+      <span><i style="background:var(--nama-2)"></i>resultant 32</span>
+      <span><i style="background:var(--sheet);border:2px solid var(--muted)"></i>functional 20</span>
+      <span><i style="background:var(--nib)"></i>path 4</span>
+      <span><i style="background:var(--nib-soft);border:1.5px solid var(--nib)"></i>fruit 4</span>
+    </div>
+    <p class="cap" style="text-align:center">Each dot is one of the 89 kinds of consciousness. The rings run from the sense-sphere on the outside to the supramundane at the centre, where the only object is Nibbāna.</p>
+  </div>
+  <div class="toc" id="toc" aria-label="Contents"></div>
+  <div class="pf"><span>Colour key used throughout: <span class="nm">indigo, mind</span> · <span class="rp">turmeric, matter</span> · <span class="nb">teal, Nibbāna</span> · <span class="bd">red, unwholesome</span></span><span class="pg"></span></div>
+</section>
+
+<!-- ================= START HERE: LEARNING PATH ================= -->
+<section class="sheet" id="learn">
+  <div class="ph"><span><b>Start here</b> · How to learn with this atlas</span><span>Abhidhamma Atlas</span></div>
+  <h2>A learning path in seven levels</h2>
+  <p class="lede">The plates are arranged as a path. Each level answers one question and assumes only the levels before it. Within every level you can work at three depths, taken from the Abhidhamma's own account of how wisdom grows: from learning, from reflection and from development. Read down a column to deepen one level; read across a row to climb.</p>
+  <div class="scroll"><table class="tax" id="tax"></table></div>
+  <div class="cols">
+    <div class="box tint">
+      <h3>Three depths of understanding</h3>
+      <ul class="tight small">
+        <li><b>Learn</b> · <i>sutamayā paññā</i>, wisdom from hearing and study. Know the lists, the terms and the diagrams.</li>
+        <li><b>Reflect</b> · <i>cintāmayā paññā</i>, wisdom from thinking it through. See why the lists are built as they are, and how the plates connect.</li>
+        <li><b>Observe</b> · <i>bhāvanāmayā paññā</i>, wisdom from development. Recognise the same things in your own experience.</li>
+      </ul>
+      <p class="small">The next page turns the three depths into a weekly method <a class="xr" href="#study">study</a>.</p>
+      <p class="src">Dīgha Nikāya 33; Vibhaṅga. The tradition's matching triad is study, practice and realisation (<i>pariyatti, paṭipatti, paṭivedha</i>).</p>
+    </div>
+    <div class="box">
+      <h3>Three routes through the atlas</h3>
+      <div id="routes"></div>
+    </div>
+  </div>
+  <div class="fig">
+    <div class="lab">Which plates build on which</div>
+    <div class="scroll"><svg id="dag" viewBox="0 0 680 236" style="max-width:600px;margin:0 auto" role="group" aria-label="Dependency graph of the fifteen plates, arranged in seven level columns"></svg></div>
+    <p class="cap">Each arrow means “read this first”. Every level page lists what you should arrive with and what you should leave able to do.</p>
+  </div>
+  <div class="pf"><span>Abhidhamma Atlas · learning path</span><span class="pg"></span></div>
+</section>
+
+<!-- ================= START HERE: HOW TO STUDY SLOWLY ================= -->
+<section class="sheet" id="study">
+  <div class="ph"><span><b>Start here</b> · How to study slowly</span><span>Abhidhamma Atlas</span></div>
+  <h2>How to study slowly</h2>
+  <p class="lede">The Abhidhamma rewards slow study. Traditional teachers have students learn the outline by heart, read it word by word, question it, and only then look for it in their own experience. Research on learning points the same way: recalling beats rereading, and spacing beats cramming. This page turns both into a method for using the atlas: one plate at a time, six steps, then round again a level deeper.</p>
+  <div class="lab">The study cycle · one turn for every plate</div>
+  <div class="method" id="method"></div>
+  <svg class="return" viewBox="0 0 680 34" aria-hidden="true"><path d="M640 4 C640 24, 620 26, 600 26 L80 26 C60 26, 40 24, 40 6" style="fill:none;stroke:var(--muted);stroke-width:1.4;stroke-dasharray:4 3"/><path d="M34 12 L40 3 L46 12" style="fill:none;stroke:var(--muted);stroke-width:1.4"/><text x="340" y="21" text-anchor="middle" class="tx-s tx-mu tx-it" style="font-family:var(--body)">then return, one plate and one level further on, and later the whole way round again</text></svg>
+  <div class="lab">A week with one plate</div>
+  <div class="week" id="week"></div>
+  <div class="cols" style="grid-template-columns:minmax(0,1.4fr) minmax(0,1fr)">
+    <div class="box tint">
+      <h3>Five habits</h3>
+      <ul class="tight small" id="habits"></ul>
+    </div>
+    <div class="box">
+      <h3>Why slow?</h3>
+      <p class="small">The three depths on the previous page take time to grow. Wisdom from learning comes from repetition; wisdom from reflection needs room to turn an idea over; wisdom from development needs the idea to meet your own day. A plate a week gives each of them its turn. The plan on the next page sets out the weeks <a class="xr" href="#plan">plan</a>, and the review deck keeps earlier levels alive <a class="xr" href="#deck">deck</a>.</p>
+      <p class="src">Sources: accounts of the Burmese Abhidhamma curriculum; Vibhaṅga; Nina van Gorkom, <i>Abhidhamma in Daily Life</i>; J. Dunlosky et al., “Improving Students' Learning With Effective Learning Techniques” (2013), which rates practice testing and spaced practice the most useful study techniques.</p>
+    </div>
+  </div>
+  <div class="pf"><span>Abhidhamma Atlas · how to study slowly</span><span class="pg"></span></div>
+</section>
+
+<!-- ================= START HERE: THE STUDY PLAN ================= -->
+<section class="sheet" id="plan">
+  <div class="ph"><span><b>Start here</b> · A study plan</span><span>Abhidhamma Atlas</span></div>
+  <h2>Eighteen weeks, one plate at a time</h2>
+  <p class="lede">One row a week, one column a day. Each week takes one plate, with its level page, its 3D models and its stories when the level ends. Tick a box when a session is done; leave the seventh day empty. After week 17, go back to Level I: the second pass is faster, and you will notice what you missed.</p>
+  <div class="scroll"><div id="plan-grid"></div></div>
+  <p class="cap" id="plan-stat">Tick a box when you finish a session.</p>
+  <div class="cols">
+    <div class="box tint"><h3>If a week is not enough</h3><p class="small">Take two. Plates 3, 7, 8 and 13 hold the most. The point is not to finish, but to know each plate well enough to redraw it and to find it in your day.</p></div>
+    <div class="box"><h3>Studying with others</h3><p class="small">The tradition learns in pairs and classes. Take turns asking each other the Learn questions, and bring one Observe note each week. Disagreements about the Reflect questions are the best part.</p></div>
+  </div>
+  <div class="pf"><span>Abhidhamma Atlas · study plan · your ticks stay in this browser and are not shared</span><span class="pg"></span></div>
+</section>
+
+<!-- ================= START HERE: CONCEPT MAP ================= -->
+<section class="sheet" id="map">
+  <div class="ph"><span><b>Start here</b> · Concept map</span><span>Abhidhamma Atlas</span></div>
+  <h2>How the main ideas connect</h2>
+  <p class="lede">Sixteen main ideas and the relations that join them. Rows follow Levels I to VI, and each box names the plates that teach it. Read every arrow as a sentence: <i>Javana, its volition is kamma, Kamma.</i> Come back to this page after each level and you will find more of it makes sense.<span class="web"> Choose any idea or arrow to open it, follow the names in the panel to walk from idea to idea, or trace the chain that joins two ideas.</span></p>
+  <div class="cm-path web" role="group" aria-label="Trace a connection">
+    <span class="lab">Trace a connection</span>
+    <label for="cm-from">from</label><select id="cm-from"></select>
+    <label for="cm-to">to</label><select id="cm-to"></select>
+    <button type="button" class="pill" id="cm-trace">Trace</button>
+    <button type="button" class="pill" id="cm-swap" aria-label="Swap the two ideas">⇄</button>
+    <button type="button" class="pill" id="cm-random">Surprise me</button>
+  </div>
+  <div class="fig"><div class="scroll"><svg class="cmap" id="cmap-main" data-hl="0" viewBox="0 0 680 610" role="group" aria-label="Concept map of sixteen main ideas in six level rows, joined by labelled arrows. Each idea and arrow can be chosen."></svg></div></div>
+  <div class="cm-panel web" id="cm-panel" aria-live="polite"></div>
+  <div class="lab">Three loops worth tracing on the map</div>
+  <div class="cols3">
+    <div class="box">
+      <h3>The loop of a life</h3>
+      <div class="seq"><span>Kamma</span><em>→</em><span>Rebirth</span><em>→</em><span>Life-continuum</span><em>→</em><span>Process</span><em>→</em><span>Javana</span><em>→</em><span>Kamma</span></div>
+      <p class="small">Each javana adds kamma; kamma shapes the next life; that life's moments make more javanas. <a class="xr" href="#p7">→ 7</a> <a class="xr" href="#p10">→ 10</a></p>
+      <button type="button" class="pill web" data-loop="life"><i style="background:var(--kamma)"></i>Show on the map</button>
+    </div>
+    <div class="box">
+      <h3>Mind and matter hold each other up</h3>
+      <div class="seq"><span>Rūpa</span><em>→</em><span>Citta</span><em>→</em><span>Rūpa</span></div>
+      <p class="small">Matter gives mind its bases and objects; mind gives matter its movements; kamma builds the sense organs. <a class="xr" href="#p5">→ 5</a> <a class="xr" href="#p8">→ 8</a></p>
+      <button type="button" class="pill web" data-loop="mm"><i style="background:var(--rupa-mark)"></i>Show on the map</button>
+    </div>
+    <div class="box">
+      <h3>The way out</h3>
+      <div class="seq"><span>Calm</span><em>→</em><span>Insight</span><em>→</em><span>Path</span><em>→</em><span>Nibbāna</span></div>
+      <p class="small">The path cuts ignorance and craving, the two roots of the wheel, so the first loop stops turning. <a class="xr" href="#p9">→ 9</a> <a class="xr" href="#p13">→ 13</a></p>
+      <button type="button" class="pill web" data-loop="way"><i style="background:var(--nib)"></i>Show on the map</button>
+    </div>
+  </div>
+  <div class="pf"><span>Abhidhamma Atlas · concept map · four long-range links appear when one of their ideas is chosen</span><span class="pg"></span></div>
+</section>
+
+<!-- ================= START HERE: 3D INTERCONNECTION MAP ================= -->
+<section class="sheet" id="map3d">
+  <div class="ph"><span><b>Start here</b> · The map in 3D</span><span>Abhidhamma Atlas</span></div>
+  <h2>The interconnection map in 3D</h2>
+  <p class="lede">The sixteen main ideas of the atlas, lifted into three dimensions. Each level is a floor, rising from Foundations at the bottom to Practice at the top. Every line is a relation taught in the plates, coloured by kind. Turn the model to follow a thread, choose a loop, or choose an idea to light up everything it touches.<span class="web"> Whatever you choose on the 2D map is lit up here too.</span></p>
+  <div class="btnrow ctl3" id="m3-btns" role="group" aria-label="Highlight"></div>
+  <div class="viz3d" id="m3-view"><span class="hint3">drag to turn · choose an idea</span></div>
+  <div class="legend">
+    <span><i style="background:var(--muted)"></i>analysis</span>
+    <span><i style="background:var(--nama)"></i>within mind</span>
+    <span><i style="background:var(--rupa-mark)"></i>mind and matter</span>
+    <span><i style="background:var(--kamma)"></i>kamma and rebirth</span>
+    <span><i style="background:var(--nib)"></i>the path</span>
+  </div>
+  <p class="cap" id="m3-sel">Selected: none. The next page explains all 30 links.</p>
+  <div class="lab">The sixteen ideas</div>
+  <div class="nodeidx" id="m3-nodes"></div>
+  <div class="pf"><span>Abhidhamma Atlas · interconnection map</span><span class="pg"></span></div>
+</section>
+
+<!-- ================= START HERE: EVERY LINK ================= -->
+<section class="sheet" id="links">
+  <div class="ph"><span><b>Start here</b> · Every link explained</span><span>Abhidhamma Atlas</span></div>
+  <h2>Every link explained</h2>
+  <p class="lede">The matrix shows which idea leads to which: read across a row for what an idea gives rise to, down a column for what it depends on. The list beneath gives each relation in a sentence, with the plates that teach it.<span class="web"> Choose a square to jump to its sentence, a name to open that idea on the map.</span></p>
+  <div class="cols" style="grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);align-items:center">
+    <div class="fig"><svg id="lk-matrix" viewBox="0 0 400 382" role="group" aria-label="Matrix of the 30 links between the sixteen ideas"></svg></div>
+    <div class="box tint">
+      <h3>Reading the shape</h3>
+      <ul class="tight small">
+        <li>Links that point down, from a higher floor to a lower one, are where later teaching reaches back: kamma builds the body, insight sees mind and matter, the path cuts the roots of the wheel.</li>
+        <li id="lk-busy"></li>
+        <li>Three loops recur: kamma to rebirth to life-continuum to javana and back to kamma; matter to mind and back to matter; and calm to insight to path, which cuts the first loop at its roots.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="linklist" id="lk-list"></div>
+  <div class="pf"><span>Abhidhamma Atlas · links</span><span class="pg"></span></div>
+</section>
+
+<!-- ================= START HERE: THE IDEAS DESCRIBED ================= -->
+<section class="sheet" id="ideas">
+  <div class="ph"><span><b>Start here</b> · The sixteen ideas, described</span><span>Abhidhamma Atlas</span></div>
+  <h2>The sixteen ideas, described</h2>
+  <p class="lede">Each idea on the concept map, in the Abhidhamma's own vocabulary, with a picture of the image the texts themselves use for it: the chariot, the lamp, the stream, the mango tree, the raft. Read one a day alongside its plate; the Pāli terms are in the glossary.</p>
+  <div class="ideas" id="ideas-list"></div>
+  <div class="pf"><span>Sources: Bodhi, <i>CMA</i> I–IX; Visuddhimagga XIV–XXII; Atthasālinī; Dhammapada 1</span><span class="pg"></span></div>
+</section>
+
+<section class="sheet" id="ideas-2">
+  <div class="ph"><span><b>Start here</b> · The sixteen ideas, described · 2 of 2</span><span>Abhidhamma Atlas</span></div>
+  <div class="ideas" id="ideas-list-2"></div>
+  <div class="pf"><span>Sources: Bodhi, <i>CMA</i> V, VIII, IX; Visuddhimagga XVII–XXII; AN 6.63; Milindapañha II</span><span class="pg"></span></div>
+</section>
+
+<!-- ================= START HERE: THE LIFE AS A MAP ================= -->
+<section class="sheet" id="life">
+  <div class="ph"><span><b>Start here</b> · The life as a map</span><span>Abhidhamma Atlas</span></div>
+  <h2>The Buddha's life as a map of the atlas</h2>
+  <p class="lede">Every idea in these plates appears somewhere in a life story: the Bodhisatta's past lives in the Jātakas, and the last life of Siddhattha Gotama. Read down either line, follow the coloured plate numbers into the atlas, and use the story links to reach the retellings that close each level.</p>
+  <div class="lifemap" id="lifemap"></div>
+  <div class="box tint">
+    <h3>Why stories belong in an Abhidhamma atlas</h3>
+    <p class="small">The Abhidhamma speaks in dhammas, not people. The commentaries that teach it, though, are full of people: the Atthasālinī and the Visuddhimagga constantly turn to the Buddha's life, his disciples and the Jātakas to show a dhamma at work. A story gives one concrete case; the plates give the general structure. Going back and forth between the two is the Reflect depth of this atlas.</p>
+  </div>
+  <div class="pf"><span>Ages and sequence follow the traditional biography; sources are named on each story page</span><span class="pg"></span></div>
+</section>
+
+
+
+<!-- ================= LEVEL 1 ================= -->
+<section class="sheet level" id="L1" data-level="1"></section>
+
+<section class="sheet" id="p1">
+  <div class="ph"><span><b>Plate 1</b> · The library</span><span>Abhidhamma Atlas</span></div>
+  <h2>Seven books, and the shelves that grew around them</h2>
+  <p class="lede">The Abhidhamma Piṭaka is the third basket of the Pāli Canon. Its first book takes experience apart. Its last book puts the parts back together as a web of conditions. Nearly everything written since is commentary, summary or teaching aid for these seven.</p>
+  <div class="shelf" id="shelf"></div>
+  <div class="ui small muted" style="display:flex;justify-content:space-between;gap:12px;border-top:1px solid var(--line);padding-top:4px"><span>← <b class="nm">analysis</b>: breaking wholes into dhammas</span><span><b class="nm">synthesis</b>: relating dhammas by condition →</span></div>
+  <div class="strata">
+    <div>
+      <div class="lab" style="margin-bottom:2px">Theravāda: each layer comments on the one above</div>
+      <div class="stratum"><div class="when"><b>Canon</b>c. 3rd–1st c. BCE</div><div class="chips"><span class="chip k">Abhidhamma Piṭaka, 7 books</span><span class="chip">Kathāvatthu attributed to Moggaliputta Tissa, Third Council</span><span class="chip">written down in Sri Lanka, 1st c. BCE</span></div></div>
+      <div class="stratum"><div class="when"><b>Commentaries</b>5th c. CE</div><div class="chips"><span class="chip k"><i>Atthasālinī</i> on the Dhammasaṅgaṇī</span><span class="chip k"><i>Sammohavinodanī</i> on the Vibhaṅga</span><span class="chip"><i>Pañcappakaraṇa-aṭṭhakathā</i> on the other five</span><span class="chip"><i>Visuddhimagga</i> (all by Buddhaghosa)</span><span class="chip"><i>Abhidhammāvatāra</i>, Buddhadatta</span></div></div>
+      <div class="stratum"><div class="when"><b>Subcommentaries</b>after the 5th c.</div><div class="chips"><span class="chip"><i>Mūlaṭīkā</i>, Ānanda</span><span class="chip"><i>Anuṭīkā</i>, Dhammapāla</span></div></div>
+      <div class="stratum"><div class="when"><b>Manuals</b>c. 10th–12th c.</div><div class="chips"><span class="chip k"><i>Abhidhammattha Saṅgaha</i>, Anuruddha</span><span class="chip"><i>Vibhāvinī-ṭīkā</i>, Sumaṅgala, late 12th c.</span></div></div>
+      <div class="stratum"><div class="when"><b>Burmese revival</b>1890s</div><div class="chips"><span class="chip"><i>Paramatthadīpanī</i>, Ledi Sayadaw: disputes the Vibhāvinī on 245 points</span></div></div>
+      <div class="stratum"><div class="when"><b>In English</b>1949–2010</div><div class="chips"><span class="chip">Nyanaponika, <i>Abhidhamma Studies</i> 1949</span><span class="chip">Nārada, <i>A Manual of Abhidhamma</i> 1956</span><span class="chip">van Gorkom, <i>Abhidhamma in Daily Life</i> 1975</span><span class="chip k">Bodhi (ed.), <i>A Comprehensive Manual</i> 1993</span><span class="chip">Mehm Tin Mon, <i>The Essence of Buddhist Abhidhamma</i> 1995</span><span class="chip">Karunadasa, <i>The Theravāda Abhidhamma</i> 2010</span></div></div>
+    </div>
+    <div class="north">
+      <div class="lab">A parallel shelf: northern Abhidharma</div>
+      <div class="chips"><span class="chip">Sarvāstivāda: seven treatises, led by the <i>Jñānaprasthāna</i></span><span class="chip"><i>Mahāvibhāṣā</i>, c. 2nd c. CE</span><span class="chip"><i>Abhidharmakośa</i>, Vasubandhu, c. 4th–5th c.</span><span class="chip">Yogācāra: Asaṅga's <i>Abhidharmasamuccaya</i>; the hundred dharmas</span></div>
+      <p class="cap">These lists grew from the same early matrices (<i>mātikā</i>) but reached different counts. Plate 15 sets them side by side. <a class="xr" href="#p15">→ 15</a></p>
+    </div>
+  </div>
+  <p class="cap">Dates before the modern period are approximate and some are disputed. Anuruddha's date, for example, is placed anywhere from the 8th to the 12th century; most modern scholars favour the 10th–12th.</p>
+  <div class="pf"><span>Sources: Bodhi, <i>CMA</i> introduction; Encyclopaedia entries on the Abhidhamma literature</span><span class="pg"></span></div>
+</section>
+
+<section class="sheet" id="p2">
+  <div class="ph"><span><b>Plate 2</b> · Two truths</span><span>Abhidhamma Atlas</span></div>
+  <h2>From a person to dhammas</h2>
+  <p class="lede">Ordinary speech talks about people, chariots and mangoes. That is conventional truth (<i>sammuti-sacca</i>), and it is not false. The Abhidhamma adds a second level, ultimate truth (<i>paramattha-sacca</i>): the irreducible events, or <i>dhammas</i>, that the conventions are built from. The suttas' five aggregates are the bridge between the two.</p>
+  <div class="fig">
+    <div class="scroll"><svg id="p2-zoom" viewBox="0 0 680 430" role="group" aria-label="A person, the five aggregates with their similes, the four ultimate realities sized by number of kinds, and the dhammas in one moment of seeing"></svg></div>
+    <p class="p2-info" id="p2-info" aria-live="polite"></p>
+    <p class="cap">Similes from the Pheṇapiṇḍūpama Sutta (SN 22.95). Band widths at the right are proportional to the number of kinds of dhamma; feeling and perception, one factor each, are drawn at a minimum width. Each reality has its own plate: citta <a class="xr" href="#p3">→ 3</a>, cetasika <a class="xr" href="#p4">→ 4</a>, rūpa <a class="xr" href="#p5">→ 5</a>; the moment of seeing returns on Plate 7 <a class="xr" href="#p7">→ 7</a>.</p>
+  </div>
+  <div class="cols">
+    <div class="box tint">
+      <h3>The chariot</h3>
+      <p class="small">“Chariot” is the name used when axle, wheels, frame and pole are assembled; no chariot is found apart from them. In the same way, “a being” is the convention used when the aggregates are present. Nun Vajirā says this in the Saṃyutta Nikāya, and Nāgasena makes the same point to King Milinda.</p>
+      <p class="small" style="margin-top:4px">The texts add a wordplay. The Buddha says <i>rūpa</i>, matter, is so called because it is “afflicted” (<i>ruppati</i>) by cold, heat, hunger and thirst; the commentaries add that <i>nāma</i>, mind, is so called because it bends (<i>namati</i>) toward its object.</p>
+      <p class="src">SN 5.10; SN 22.79; Milindapañha II.1; Visuddhimagga XVIII</p>
+    </div>
+    <div class="box">
+      <h3>How the commentaries define a dhamma</h3>
+      <p class="small">The commentaries give each dhamma they define the same four-part “identity card”. Learn the template once and every definition in the Atthasālinī and Visuddhimagga becomes easy to read. Sixteen cards are collected on the Identity cards page <a class="xr" href="#idcards">cards</a>.</p>
+      <ul class="tight small">
+        <li><b>Characteristic</b> (<i>lakkhaṇa</i>): its own nature</li>
+        <li><b>Function</b> (<i>rasa</i>): what it does</li>
+        <li><b>Manifestation</b> (<i>paccupaṭṭhāna</i>): how it shows up in experience</li>
+        <li><b>Proximate cause</b> (<i>padaṭṭhāna</i>): what it most directly depends on</li>
+      </ul>
+    </div>
+  </div>
+  <div class="pf"><span>Sources: SN 22.95; SN 5.10; Bodhi, <i>CMA</i> I–II; Visuddhimagga XIV; Atthasālinī</span><span class="pg"></span></div>
+</section>
+
+<section class="sheet" id="p2b">
+  <div class="ph"><span><b>Plate 2b</b> · continued · Āyatana, dhātu</span><span>Abhidhamma Atlas</span></div>
+  <h2>The twelve bases and eighteen elements</h2>
+  <p class="lede">“What is the All? The eye and forms, the ear and sounds, the nose and smells, the tongue and tastes, the body and tangibles, the mind and mental objects” (SN 35.23). The Buddha's “all” is not a world out there but six doors and what comes through them. Each door joins an organ and an object, and from their meeting a consciousness arises: “dependent on the eye and forms, eye-consciousness arises; the meeting of the three is contact” (MN 18).</p>
+  <div class="fig"><div class="scroll" tabindex="0"><svg id="doors-grid" viewBox="0 0 680 330" role="img" aria-label="Six doors, each with an internal base, an external base and a consciousness element"></svg></div></div>
+  <div class="cols">
+    <div class="box tint"><h3>Two counts of the same doors</h3><p class="small">The <b>twelve bases</b> (<i>āyatana</i>) count only the two sides of each door: six internal (the five sense organs and the mind) and six external (their objects). The <b>eighteen elements</b> (<i>dhātu</i>) add, for each door, the consciousness that arises there, and in doing so they split the mind base into seven: five sense consciousnesses, the mind element and the mind-consciousness element.</p></div>
+    <div class="box"><h3>Why three lists for one thing?</h3><p class="small">The commentaries say the Buddha taught the aggregates to those confused mainly about mind, the bases to those confused mainly about matter, and the elements to those confused about both. Each list leaves no remainder that could be a self: everything experienced is a base or an element, and none of them is “mine”.</p></div>
+  </div>
+  <div class="box"><h3>Practising with the doors</h3><p class="small">Sense restraint is guarding the six doors (Plate 7): seeing happens, and what follows in the javanas is where greed or calm arises. Bāhiya's instruction (Ud 1.10), “in the seen only the seen”, is an exercise in staying with the base and the element, before a person and a story are added.</p></div>
+  <div class="pf"><span>Sources: SN 35.23; MN 18; MN 115; Vibhaṅga (āyatana, dhātu); Bodhi, <i>CMA</i> VII §§37–39; Visuddhimagga XV</span><span class="pg"></span></div>
+</section>
+
+<!-- ================= LEVEL 1 IN 3D ================= -->
+<section class="sheet d3p" id="D1" data-level="1">
+  <div class="ph"><span><b>Level I</b> · The categories</span><span>Abhidhamma Atlas</span></div>
+  <div class="nav"><a class="lvb" href="#L1" style="background:var(--lv1);border:0"><b>I</b>Foundations</a><span>Models for plates <a href="#p1">1</a>–<a href="#p2">2</a></span></div>
+  <h2>The categories, mapped</h2>
+  <p class="lede">The suttas describe experience with overlapping lists: five aggregates, twelve bases, eighteen elements, four noble truths. The Abhidhamma shows that they are four ways of cutting the same cloth. The top bar holds every kind of ultimate reality, sized by count; each row below cuts that same bar differently. Read straight down to see where any dhamma falls in every list.<span class="web"> Choose any slice to read it.</span></p>
+  <div class="fig"><div class="scroll" tabindex="0"><svg id="cat-map" viewBox="0 0 680 400" role="img" aria-label="One bar of the four ultimate realities, cut four ways: into the aggregates, the bases, the elements and the noble truths"></svg></div></div>
+  <p class="p2-info" id="cat-info" aria-live="polite"></p>
+  <div class="cols">
+    <div class="box"><h3>Five aggregates</h3><p class="small">Rūpa is all 28 kinds of matter. Feeling and perception are one mental factor each, and formations are the other 50. Consciousness is all 89 cittas. Nibbāna belongs to no aggregate.</p></div>
+    <div class="box"><h3>Twelve bases</h3><p class="small">Ten bases are matter: five sense organs and five objects. The mind base is all 89 cittas. The mental-object base gathers the rest: the 52 factors, the 16 subtle kinds of matter, and Nibbāna.</p></div>
+    <div class="box"><h3>Eighteen elements</h3><p class="small">As the bases, but the mind base splits into seven: five sense-consciousness elements (10 cittas), the mind element (3: five-door adverting and the two receiving cittas) and the mind-consciousness element (the other 76).</p></div>
+    <div class="box"><h3>Four noble truths</h3><p class="small">Suffering is everything mundane, the mind and matter of the three planes. Its origin is craving, which the Abhidhamma identifies with the factor greed. Cessation is Nibbāna. The path is the eight path factors, mental factors that arise together in path consciousness (seven in paths of the second jhāna and above, which lack right intention).</p></div>
+  </div>
+  <p class="cap">Gross and subtle matter: the five organs and seven objects (touch counting as earth, fire and air) are the 12 gross kinds of matter; the other 16 are subtle and are known only at the mind door.</p>
+  <div class="pf"><span>Sources: Bodhi, <i>CMA</i> VII (compendium of categories); Nārada, <i>Manual</i> VII</span><span class="pg"></span></div>
+</section>
+
+<!-- ================= STORIES 1 ================= -->
+<section class="sheet stories" id="S1" data-level="1"></section>
+
+<!-- ================= LEVEL 2 ================= -->
+<section class="sheet level" id="L2" data-level="2"></section>
+
+<section class="sheet" id="p3">
+  <div class="ph"><span><b>Plate 3</b> · Chapter I · Citta</span><span>Abhidhamma Atlas</span></div>
+  <h2>A map of the 89, coloured by feeling</h2>
+  <p class="lede">The usual chart sorts consciousness by plane and by ethical quality. Colour it by the feeling (<i>vedanā</i>) that each citta carries and a pattern appears: most kinds of mundane citta are neutral (47 of 81), joy is common in wholesome states, and pain and displeasure are surprisingly rare.</p>
+  <div class="scroll"><svg id="citta-map" viewBox="0 0 680 330" role="group" aria-label="The 89 cittas in rows by plane and kind, each coloured by its feeling; choose one to read it"></svg></div>
+  <p class="p2-info web" id="p3-info" aria-live="polite"></p>
+  <div class="legend">
+    <span><i style="background:var(--f-joy)"></i>joy · <em class="p">somanassa</em></span>
+    <span><i style="background:var(--f-eq)"></i>equanimity · <em class="p">upekkhā</em></span>
+    <span><i style="background:var(--f-ple)"></i>bodily pleasure · <em class="p">sukha</em></span>
+    <span><i style="background:var(--f-pain)"></i>bodily pain · <em class="p">dukkha</em></span>
+    <span><i style="background:var(--f-dis)"></i>displeasure · <em class="p">domanassa</em></span>
+    <span><i style="background:linear-gradient(135deg,var(--f-joy) 50%,var(--f-eq) 50%)"></i>joy or equanimity, by jhāna level</span>
+    <span><i style="background:none;border:1.6px solid var(--ink)"></i>ringed: the mango moment, Plate 7</span>
+  </div>
+  <div class="p3-key" id="p3-key" aria-label="How the numbers are ordered"></div>
+  <div class="cols" style="align-items:center">
+    <div class="fig">
+      <svg id="waffle" viewBox="0 0 300 200" style="max-width:230px" role="img" aria-label="121 cittas as a waffle chart by feeling: joy 62, equanimity 55, displeasure 2, pleasure 1, pain 1"></svg>
+    </div>
+    <div class="box tint">
+      <h3>What the colours say</h3>
+      <ul class="tight small">
+        <li>Counted as 121, joy accompanies 62 cittas and equanimity 55. Only four cittas carry any other feeling.</li>
+        <li>Bodily pleasure and bodily pain occur in exactly one citta each: wholesome-resultant and unwholesome-resultant body-consciousness.</li>
+        <li>Displeasure occurs only in the two hate-rooted cittas. Wherever there is displeasure, there is aversion.</li>
+        <li>Every immaterial citta is equanimous, and so is the fifth jhāna. The higher the concentration, the quieter the feeling.</li>
+        <li>The fine-material and immaterial rows are the minds of jhāna. Each has its own worlds <a class="xr" href="#p11">→ 11</a> and its own meditation subjects <a class="xr" href="#p12">→ 12</a>. What each citta does is on the next sheet <a class="xr" href="#p3b">→ 3b</a>.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="pf"><span>Source: Bodhi, <i>CMA</i> I and III (compendium of feeling)</span><span class="pg"></span></div>
+</section>
+
+<section class="sheet" id="p3b">
+  <div class="ph"><span><b>Plate 3b</b> · continued · Chapter III · Kicca, dvāra, vatthu</span><span>Abhidhamma Atlas</span></div>
+  <h2>What each citta does</h2>
+  <p class="lede">Plate 3 sorted the 89 by what they are. Chapter III of the Saṅgaha asks what they do: which of fourteen jobs each can perform, through which doors it knows, and on which physical base it stands. This is the bridge from the map of the 89 to the moments of Plate 7.</p>
+  <div class="lab">On a five-door track (Plate 7): how many cittas can fill each slot</div>
+  <div class="scroll" tabindex="0"><svg id="fn-track" viewBox="0 0 680 68" role="img" aria-label="The five-door track: life-continuum (this life's own), adverting 1, seeing 2, receiving 2, investigating 3, determining 1, javana 29, registration 11, life-continuum"></svg></div>
+  <div class="lab">The 89, numbered as on Plate 3, against the fourteen jobs</div>
+  <div class="scroll"><svg id="fn-grid" viewBox="0 0 680 290" role="group" aria-label="A grid of the 89 cittas against the 14 functions, with doors and physical base for each citta"></svg></div>
+  <p class="p2-info web" id="fn-info" aria-live="polite"></p>
+  <div class="legend fn-key">
+    <span><i style="background:var(--bad)"></i>unwholesome</span><span><i style="background:var(--nama)"></i>wholesome</span><span><i style="background:var(--nama-2)"></i>resultant</span><span><i style="background:var(--sheet);border:1px solid var(--nama)"></i>functional</span><span><i style="background:var(--nib)"></i>path</span><span><i style="background:var(--nib-soft);border:1px solid var(--nib)"></i>fruit</span>
+    <span class="sep">doors:</span><span><i style="background:var(--line)"></i>one</span><span><i style="background:var(--nama-2);opacity:.55"></i>five</span><span><i style="background:var(--nama)"></i>six</span><span><i style="background:var(--nama);opacity:.5"></i>six or none</span><span><i style="background:none;border:1px solid var(--muted)"></i>door-freed</span>
+    <span class="sep">base:</span><span><i style="background:var(--rupa-mark)"></i>its own sense organ</span><span><i style="background:var(--rupa-soft);border:1.2px solid var(--rupa-mark)"></i>heart</span><span><i style="background:none;border:1px dashed var(--rupa-mark)"></i>heart, or none (immaterial planes)</span><span><i style="background:none;border:1px dashed var(--muted)"></i>none</span>
+  </div>
+  <div class="cols3">
+    <div class="box tint">
+      <h3>The busiest cittas</h3>
+      <p class="small">68 cittas do one job. Two do five: the equanimous investigating cittas #19 and #27 investigate and register, and are the rebirth-linking, life-continuum and death of beings reborn without roots. The eight great resultants (#39–46) do four, the nine sublime resultants three.</p>
+    </div>
+    <div class="box">
+      <h3>Doors</h3>
+      <p class="small">A door is where a process meets its object: the five sensitivities, which are matter (Plate 5), and the mind door, the life-continuum itself. 46 cittas can arise through the eye door, 67 through the mind door; 19 are door-freed, because rebirth-linking, life-continuum and death happen outside any process.</p>
+    </div>
+    <div class="box">
+      <h3>Physical bases</h3>
+      <p class="small">Every citta in a body stands on a base (<i>vatthu</i>, not the <i>āyatana</i> of Plate 2): the ten sense consciousnesses on their own organ, the rest on the heart-base. The sense sphere has all six bases, the fine-material planes three (eye, ear, heart), the immaterial planes none, so four cittas never need one.</p>
+    </div>
+  </div>
+  <div class="box">
+    <h3>Objects: what each kind of citta can know</h3>
+    <div class="objtab small">
+      <span><b>25</b> sense-sphere objects only: the 23 sense-sphere resultants, five-door adverting, the smile</span>
+      <span><b>20</b> any mundane object: the 12 unwholesome and the 8 great wholesome and functional without knowledge</span>
+      <span><b>5</b> anything but arahant path and fruit: great wholesome with knowledge, and fifth-jhāna wholesome as direct knowledge</span>
+      <span><b>6</b> any object: great functional with knowledge, fifth-jhāna functional, mind-door adverting</span>
+      <span><b>21</b> a concept: the 15 fine-material cittas and the first and third immaterial (×3)</span>
+      <span><b>6</b> a sublime citta: the second and fourth immaterial (×3) &nbsp;·&nbsp; <b>8</b> Nibbāna: path and fruit</span>
+    </div>
+    <p class="cap">Five-door cittas take only present objects; mind-door cittas any time, or none. The counts sum to 91: #59 and #69 fall in two classes.</p>
+  </div>
+  <div class="pf"><span>Source: Bodhi, <i>CMA</i> III §§8–22; counts derived from the Saṅgaha's rules and checked against its stated totals</span><span class="pg"></span></div>
+</section>
+
+<section class="sheet" id="p4">
+  <div class="ph"><span><b>Plate 4</b> · Chapter II · Cetasika</span><span>Abhidhamma Atlas</span></div>
+  <h2>The 52 mental factors as an ensemble</h2>
+  <p class="lede">Picture the factors as players gathered around citta. Seven play in every moment of mind; six more join either side when the music calls for them. The two outer families, unwholesome and beautiful, never play in the same moment.</p>
+  <div class="fig"><svg id="ensemble" viewBox="0 0 680 356" role="img" aria-label="The 52 mental factors: 7 universals round citta, 6 occasionals, then the 14 unwholesome factors in five groups on the left and the 25 beautiful factors in four groups on the right, each named in English and Pāli"></svg></div>
+  <div class="legend"><span>inner ring: 7 universals, in every citta · middle: 6 occasionals, either side · ×2: of the mental body and of the mind</span><span><i style="background:var(--nama)"></i>fixed: always joins its cittas</span><span><i style="background:var(--sheet);border:1.4px dashed var(--nama)"></i>unfixed: joins only sometimes (<em class="p">aniyatayogī</em>), 11 in all</span><span><i style="background:var(--bad)"></i>unwholesome</span></div>
+  <div class="fig">
+    <div class="lab">How many factors join each kind of citta (numbers as on Plate 3)</div>
+    <svg id="factor-bars" viewBox="0 0 680 182" role="img" aria-label="Number of mental factors in ten cittas, stacked by family, from 7 in seeing to 38 in the first great wholesome citta"></svg>
+    <div class="legend"><span><i style="background:var(--nama-2)"></i>7 universals</span><span><i style="background:var(--nama-soft);border:1px solid var(--nama-2)"></i>occasionals</span><span><i style="background:var(--bad)"></i>unwholesome</span><span><i style="background:var(--nama)"></i>19 beautiful universals</span><span><i style="background:var(--th10)"></i>wisdom</span><span>+3 in path: the abstinences, always present</span><span><i style="background:var(--sheet);border:1px dashed var(--nama)"></i>may join, one at a time</span></div>
+  </div>
+  <div class="cols">
+    <div class="box tint">
+      <h3>Reading the +2 and the +5</h3>
+      <p class="small">+3: the abstinences (right speech, action, livelihood) join a mundane citta only when one is refraining from a wrong; in path consciousness all three are always there. +2: compassion and appreciative joy, when the object is a being in pain or in success. One at a time, so at most 34 are present at once. <a class="xr" href="#p14">→ 14</a></p>
+    </div>
+    <div class="box">
+      <h3>Why the families never meet</h3>
+      <p class="small">Each family has its own universals: four in every unwholesome citta, nineteen in every beautiful one. They come in opposed pairs, shame against shamelessness, non-greed against greed, so one citta with one object cannot hold both. The occasionals have no opposite and take either side. <span class="muted">A reading of CMA II.</span></p>
+    </div>
+  </div>
+  <div class="pf"><span>Source: Bodhi, <i>CMA</i> II (association and combination of mental factors)</span><span class="pg"></span></div>
+</section>
+
+<section class="sheet" id="p4b">
+  <div class="ph"><span><b>Plate 4b</b> · continued · Chapter II · Sampayoga, saṅgaha</span><span>Abhidhamma Atlas</span></div>
+  <h2>Which factors meet which cittas</h2>
+  <p class="lede">Chapter II reads one table two ways. Across a row, the method of association: which cittas a factor joins. Down a column, the method of combination: which factors a citta takes. Rows follow Plate 4, columns Plate 3's numbering.<span class="web"> Choose a factor's name or a citta's column to read it.</span></p>
+  <div class="fig"><div class="scroll" tabindex="0"><svg id="ac-grid" viewBox="0 0 680 540" role="img" aria-label="The 52 mental factors against the 89 cittas, with the count of factors in each citta beneath"></svg></div></div>
+  <p class="p2-info" id="ac-info" aria-live="polite"></p>
+  <div class="legend"><span><i style="background:var(--nama)"></i>always present (fixed)</span><span><i style="background:var(--sheet);border:1.5px solid var(--nama)"></i>may be present (one of the 11 unfixed)</span><span><i style="background:var(--nama-soft);border:1px solid var(--nama)"></i>by jhāna, in path and fruit cittas</span></div>
+  <div class="cols">
+    <div class="box tint"><h3>The two families never meet</h3><p class="small">The 14 unwholesome and the 25 beautiful factors never share a citta: their dots never fall in the same column. An unwholesome citta takes at most 21 factors at once; a great wholesome one 38 counted, but at most 34 at once.</p><div id="ac-unfixed" class="small"></div></div>
+    <div class="box"><h3>Counting a column</h3><div id="ac-comb" class="small"></div><p class="src">The margins give each factor's count out of 89 and out of 121; the Saṅgaha's own verse prints 55, 66, 78, 73, 51 and 69 for the six particulars, mixing the two bases.</p></div>
+  </div>
+  <div class="pf"><span>Sources: Bodhi, <i>CMA</i> II §§10–30; the round-2 research tables, derived from the Saṅgaha's inclusion rules</span><span class="pg"></span></div>
+</section>
+
+<section class="sheet" id="p5">
+  <div class="ph"><span><b>Plate 5</b> · Chapter VI · Rūpa</span><span>Abhidhamma Atlas</span></div>
+  <h2>How matter is made</h2>
+  <p class="lede">Four things produce matter: kamma, mind, temperature and nutriment. The matrix shows which kinds each one makes. Matter never arises alone; it comes in packets called <i>kalāpas</i>, and every packet carries the same eight inseparables.</p>
+  <div class="cols" style="grid-template-columns:minmax(0,1fr) minmax(0,1fr)">
+    <div class="fig"><svg id="rupa-matrix" viewBox="0 0 330 520" role="img" aria-label="Matrix of 28 kinds of matter against their four origins"></svg></div>
+    <div style="display:grid;gap:12px;align-content:start">
+      <div class="fig">
+        <div class="lab">One unit of matter outlives seventeen cittas</div>
+        <svg id="matter-life" viewBox="0 0 330 120" role="img" aria-label="Seventeen cittas of three sub-moments each, against one unit of matter with one sub-moment of arising, forty-nine of presence and one of dissolution"></svg>
+      </div>
+      <div class="fig">
+        <div class="lab">The 21 kalāpas</div>
+        <svg id="kalapas" viewBox="0 0 330 360" role="img" aria-label="21 groups of matter by origin, each drawn as a row of squares"></svg>
+        <div class="legend"><span><i style="background:var(--rupa-soft);border:1px solid var(--rupa)"></i>the eight inseparables</span><span><i style="background:var(--rupa-mark)"></i>added kinds</span></div>
+      </div>
+    </div>
+  </div>
+  <p class="cap">Space separates the kalāpas, and the four characteristics only mark their arising and decay, so neither is counted inside a group. Kamma-born matter is where this plate meets Plate 10 <a class="xr" href="#p10">→ 10</a>; mind-born matter is how javanas move the body <a class="xr" href="#p7">→ 7</a>.</p>
+  <div class="pf"><span>Source: Bodhi, <i>CMA</i> VI</span><span class="pg"></span></div>
+</section>
+
+<section class="sheet" id="p6">
+  <div class="ph"><span><b>Plate 6</b> · How the old teachers taught</span><span>Abhidhamma Atlas</span></div>
+  <h2>The commentators' picture-book</h2>
+  <p class="lede">The canonical Abhidhamma is lists and tables. The commentaries brought it to life with similes. Each one is chosen to show a single property, not to tell a whole story, so it pays to ask what the picture is pointing at.</p>
+  <div class="box tint" style="gap:8px">
+    <h3>Three people look at a heap of coins</h3>
+    <svg id="coins" viewBox="0 0 660 150" role="img" aria-label="A child, a villager and a money-changer look at the same coins, matching perception, consciousness and understanding"></svg>
+    <p class="small">A child sees shapes and colours but does not know the coins are money. A villager knows they are money and can be spent. A money-changer knows which are genuine, which are false, where they were struck and what they weigh. So perception (<i>saññā</i>) notes the surface, consciousness (<i>viññāṇa</i>) knows the object as such, and understanding (<i>paññā</i>) penetrates its characteristics.</p>
+    <p class="src">Visuddhimagga XIV, on “in what sense is it understanding?”</p>
+  </div>
+  <div class="similes" id="similes"></div>
+  <div class="pf"><span>Sources: Milindapañha II; Visuddhimagga IV, XIV, XVIII; Atthasālinī; L. S. Cousins, “Vitakka/vitarka and vicāra” (1992); M. Heim, “Nāmarūpa in Buddhaghosa”</span><span class="pg"></span></div>
+</section>
+
+<!-- ================= LEVEL 2 IN 3D ================= -->
+<section class="sheet d3p" id="D2" data-level="2">
+  <div class="ph"><span><b>Level II</b> · In 3D</span><span>Abhidhamma Atlas</span></div>
+  <div class="nav"><a class="lvb" href="#L2" style="background:var(--lv2);border:0"><b>II</b>Elements</a><span>Models for plates <a href="#p3">3</a>–<a href="#p6">6</a></span></div>
+  <h2>Elements in 3D</h2>
+  <p class="lede">Three models of the elements of experience: all 89 cittas as a stupa, the 52 factors gathered round a single citta, and the inside of a kalāpa of matter.</p>
+  <div class="btnrow ctl3" id="d2-tower-btns" role="group" aria-label="Colour by"></div>
+  <div class="viz3d" id="d2-tower"><span class="hint3">drag to turn</span></div>
+  <div class="legend" id="d2-tower-legend"></div>
+  <p class="cap">Each cube is one citta. The tiers rise from the 54 sense-sphere cittas, through the 15 fine-material and 12 immaterial, to the 8 supramundane cittas around Nibbāna at the top. Coloured by feeling, most of the stupa is joy or equanimity; the four red-brown and green cubes are the only cittas with bodily pain, bodily pleasure or displeasure.</p>
+  <div class="cols">
+    <div class="fig">
+      <div class="btnrow ctl3 sm" id="d2-ceta-btns" role="group" aria-label="Citta"></div>
+      <div class="viz3d" id="d2-ceta"><div class="tip3" id="d2-ceta-tip"></div><span class="hint3">drag to turn</span></div>
+      <p class="cap" id="d2-ceta-cap"></p>
+    </div>
+    <div class="fig">
+      <div class="btnrow ctl3 sm" id="d2-kal-btns" role="group" aria-label="Kalāpa"></div>
+      <div class="viz3d" id="d2-kal"><span class="hint3">drag to turn</span></div>
+      <p class="cap" id="d2-kal-cap"></p>
+    </div>
+  </div>
+  <div class="pf"><span>Sources: Bodhi, <i>CMA</i> I, II, VI</span><span class="pg"></span></div>
+</section>
+
+<!-- ================= STORIES 2 ================= -->
+<section class="sheet stories" id="S2" data-level="2"></section>
+
+<!-- ================= LEVEL 3 ================= -->
+<section class="sheet level" id="L3" data-level="3"></section>
+
+<section class="sheet" id="p7">
+  <div class="ph"><span><b>Plate 7</b> · Chapter IV · Vīthi</span><span>Abhidhamma Atlas</span></div>
+  <h2>The mango and the moment</h2>
+  <p class="lede">The Atthasālinī explains a seventeen-moment process of seeing with a story: a man asleep under a mango tree. Every row below runs on the same clock, one column per mind-moment: the object's matter, the door and base it works through, the citta that does each job (numbered as on Plate 3), what that moment does, the matter it makes, and the picture.</p>
+  <div class="btnrow sm web p7-modes" id="p7-modes" role="group" aria-label="Strength of the object"></div>
+  <div class="fig p7-fig">
+    <svg id="p7-tl" class="tl-h" viewBox="0 0 680 240" role="group" aria-label="Seventeen mind-moments in columns: the mango's colour lasts all seventeen; the eye-door; the base of each citta; the cittas by Plate 3 number; which moments are results, functional or make kamma; mind-born matter; and the mango simile"></svg>
+    <svg id="p7-tlv" class="tl-v" viewBox="0 0 340 570" role="group" aria-label="The same seventeen moments, one per row"></svg>
+    <p class="cap web" id="p7-info" aria-live="polite"></p>
+  </div>
+  <div class="legend p7-key">
+    <span><i class="k-bh"></i>life-continuum</span><span><i class="k-pr"></i>process citta</span><span><i class="k-vi"></i>sense consciousness</span><span><i class="k-ja"></i>javana</span><span><i class="k-ta"></i>registration</span>
+    <span><svg viewBox="0 0 10 10" width="10" height="10"><circle cx="5" cy="5" r="3.4" style="fill:none;stroke:var(--nama-2);stroke-width:1.3"/></svg>result of past kamma</span>
+    <span><svg viewBox="0 0 10 10" width="10" height="10"><rect x="2" y="2" width="6" height="6" style="fill:none;stroke:var(--muted);stroke-width:1.3"/></svg>functional: acts, no result</span>
+    <span><svg viewBox="0 0 10 10" width="10" height="10"><path d="M5 0 l5 5 l-5 5 l-5 -5 Z" style="fill:var(--kamma)"/></svg>makes kamma</span>
+    <span><i style="background:var(--rupa-mark)"></i>matter</span>
+  </div>
+  <p class="cap">The simile follows the Atthasālinī: he wakes, sees, takes the fruit, squeezes it, smells it and eats it. † Swallowing and lying down again were added by later teachers, for example in the <i>Vibhāvinī-ṭīkā</i>, to cover registration and the return to the life-continuum. The citta numbers are one case: the man's life-continuum is shown as #39 (any of #27, #39–46 for a human); the mango is taken as an extremely desirable object, so investigating has joy (#26; a moderately desirable one gives #27); the javana is #3, greed with joy, without wrong view. Plate 3b lists every citta that can do each job.</p>
+  <div class="p7-read">
+    <div><b>1–3 · Life-continuum.</b> The same citta as this life's rebirth-linking keeps the stream going between processes. The arriving object makes it vibrate, then stop. <a class="xr" href="#p10">→ 10</a></div>
+    <div><b>4–8 · Turning and handling.</b> Adverting (#28) and determining (#29) are functional: they act and leave no result. Seeing, receiving and investigating are results of past kamma: no one chooses what is seen. <a class="xr" href="#p3">→ 3</a></div>
+    <div><b>9–15 · Javana.</b> The only moments that make kamma. Whether they are greed (#3) or a wholesome citta turns on wise or unwise attention at determining, the Atthasālinī says. <a class="xr" href="#p10">→ 10</a></div>
+    <div><b>16–17 · Registration.</b> A result again, taking the javanas' object. The process has lasted exactly as long as the mango's unit of matter; then the life-continuum resumes. <a class="xr" href="#p5">→ 5</a></div>
+  </div>
+  <div class="cols">
+    <div class="fig">
+      <div class="lab">Not every object completes the process</div>
+      <svg id="strengths" viewBox="0 0 330 205" role="img" aria-label="Five process strips: very great, great, slight and very slight objects at a sense door, and a clear object at the mind door"></svg>
+    </div>
+    <div class="box tint">
+      <h3>How fast is a moment?</h3>
+      <p class="small">The commentaries say that billions of cittas can arise and cease in the time it takes lightning to flash or an eye to blink. The seventeen moments are not a slow story; they are a description of structure.</p>
+      <h3 style="margin-top:6px">Why seventeen?</h3>
+      <p class="small">A unit of matter lasts seventeen mind-moments. A sense object strikes the door at the first moment and is gone after the seventeenth, so a single object can carry exactly one complete process. A weaker impact starts later and runs out sooner.</p>
+    </div>
+  </div>
+  <div class="pf"><span>Sources: Atthasālinī; Bodhi, <i>CMA</i> III–IV and its guide; Nārada, <i>The Buddha and His Teachings</i></span><span class="pg"></span></div>
+</section>
+
+<section class="sheet" id="p7b">
+  <div class="ph"><span><b>Plate 7b</b> · continued · Chapter IV · Vīthi</span><span>Abhidhamma Atlas</span></div>
+  <h2>Other processes</h2>
+  <p class="lede">Plate 7 followed one eye-door process. The same building blocks make every other process: the mind door, absorption in jhāna, the path, the attainment of cessation, and the last process of a life. Each strip below reads left to right, one cell per mind-moment, in the colours of Plate 7.</p>
+  <div class="legend" id="pr-legend"></div>
+  <div class="prlist" id="pr-list"></div>
+  <div class="cols">
+    <div class="box tint"><h3>When does it become “a mango”?</h3><p class="small" id="pr-teach"></p><ol class="tight small" id="pr-series"></ol><p class="src">The series of naming processes is later teaching (Ledi Sayadaw and others), not the Saṅgaha's own.</p></div>
+    <div class="box"><h3>Rules of the process</h3><div class="small" id="pr-rules"></div></div>
+  </div>
+  <div class="pf"><span>Sources: Bodhi, <i>CMA</i> IV §§12–29, IX; Visuddhimagga XXII–XXIII; Atthasālinī on attention</span><span class="pg"></span></div>
+</section>
+
+<!-- ================= LEVEL 3 IN 3D ================= -->
+<section class="sheet d3p" id="D3" data-level="3">
+  <div class="ph"><span><b>Level III</b> · In 3D</span><span>Abhidhamma Atlas</span></div>
+  <div class="nav"><a class="lvb" href="#L3" style="background:var(--lv3);border:0"><b>III</b>Process</a><span>Models for plate <a href="#p7">7</a></span></div>
+  <h2>Process in 3D</h2>
+  <p class="lede">Two views of the same seconds of life. Above, one cognitive process as a track of moments, with what each moment does to kamma and to the body. Below, the body itself as a clock: one turn of the pointer is the 51 sub-moments that a unit of matter lives, so each ring of matter stays full while every unit in it is replaced.</p>
+  <div class="btnrow ctl3" id="d3-proc-btns" role="group" aria-label="Object"></div>
+  <div class="viz3d" id="d3-proc"><span class="hint3">drag to turn</span></div>
+  <p class="cap">The bar above the track is the object's life: seventeen moments for a very great object. Violet seeds rise from the javanas, where kamma is made. The small cubes below are mind-born matter, produced as each citta arises, except the sense consciousness, which is too weak to produce matter.</p>
+  <div class="btnrow ctl3" id="d3-loom-modes" role="group" aria-label="Stage of life"></div>
+  <div class="viz3d" id="d3-loom"><span class="hint3">drag to turn</span></div>
+  <div class="legend"><span><i style="background:var(--kamma)"></i>kamma-born · every sub-moment</span><span><i style="background:var(--nama)"></i>mind-born · at each citta's arising</span><span><i style="background:var(--temp)"></i>temperature-born · rate illustrative</span><span><i style="background:var(--food)"></i>nutriment-born · rate illustrative</span></div>
+  <p class="cap"><b id="d3-loom-title"></b> <span id="d3-loom-text"></span></p>
+  <div class="pf"><span>Sources: Bodhi, <i>CMA</i> IV, VI</span><span class="pg"></span></div>
+</section>
+
+<!-- ================= STORIES 3 ================= -->
+<section class="sheet stories" id="S3" data-level="3"></section>
+
+<!-- ================= LEVEL 4 ================= -->
+<section class="sheet level" id="L4" data-level="4"></section>
+
+<section class="sheet" id="p8">
+  <div class="ph"><span><b>Plate 8</b> · Chapter VIII · Paṭṭhāna</span><span>Abhidhamma Atlas</span></div>
+  <h2>The web of 24 conditions</h2>
+  <p class="lede">The Paṭṭhāna asks one question of every pair of dhammas: how does this one help that one arise or persist? Its 24 answers fall into six families according to direction, mind or matter on each side. The Saṅgaha adds that all 24 fold into four, a good place to start: <b>object</b> (what is known), <b>decisive support</b> (what strongly backed it), <b>kamma</b> (what volition produced it) and <b>presence</b> (what had to exist at the same time).</p>
+  <div class="cols3" id="rels"></div>
+  <div class="fig">
+    <div class="lab">The 24 in their canonical order, coloured by family</div>
+    <div class="cond24" id="cond24"></div>
+  </div>
+  <div class="box">
+    <h3>Worked example: seeing a mango and wanting it <a class="xr" href="#p14">→ 14</a></h3>
+    <div class="ex" id="example"></div>
+  </div>
+  <details class="web cweb"><summary>The mango moment as a web of conditions</summary><p class="small">The moment of seeing a ripe mango and wanting it (Plate 7), as its dhammas and the conditions between them. Choose a line to read it; the numbers are the 24 conditions above.</p><div class="scroll" tabindex="0"><svg id="p8-web" viewBox="0 0 680 330" role="img" aria-label="Condition web of the mango moment"></svg></div><p class="p2-info" id="p8-web-info"></p></details>
+  <div class="pf"><span>Sources: Bodhi, <i>CMA</i> VIII; Agganyani, overview of the 24 paccayas</span><span class="pg"></span></div>
+</section>
+
+<section class="sheet" id="p8b">
+  <div class="ph"><span><b>Plate 8b</b> · continued · Chapter VII · Samuccaya</span><span>Abhidhamma Atlas</span></div>
+  <h2>The lists reduced to their factors</h2>
+  <p class="lede">Chapter VII gathers the Abhidhamma's lists: taints, floods, bonds, ties, clingings, hindrances, latent tendencies, fetters, defilements. Dozens of names reduce to only fourteen unwholesome factors. Each circle counts the items of a list that are, ultimately, that factor.<span class="web"> Choose a list or a factor to read it.</span></p>
+  <div class="fig"><div class="scroll" tabindex="0"><svg id="ls-grid" viewBox="0 0 680 352" role="img" aria-label="Ten lists of defilements reduced to the fourteen unwholesome factors"></svg></div></div>
+  <p class="p2-info" id="ls-info" aria-live="polite"></p>
+  <div class="lab">Six categories that are also conditions</div>
+  <div class="fig"><div class="scroll" tabindex="0"><svg id="ls-mixed" viewBox="0 0 680 206" role="img" aria-label="Seven mixed categories, six of which are conditions of the Paṭṭhāna"></svg></div></div>
+  <div class="cols">
+    <div class="box tint"><h3>Two cautions</h3><ul class="tight small" id="ls-cautions"></ul></div>
+    <div class="box"><h3>The requisites of enlightenment</h3><p class="small" id="ls-req"></p><p class="small">The table is on the Level VI models page <a class="xr" href="#D6">D6</a>.</p></div>
+  </div>
+  <div class="pf"><span>Sources: Bodhi, <i>CMA</i> VII §§3–33, VIII; Dhammasaṅgaṇī</span><span class="pg"></span></div>
+</section>
+
+<section class="sheet" id="p9">
+  <div class="ph"><span><b>Plate 9</b> · Chapter VIII · Paṭicca-samuppāda</span><span>Abhidhamma Atlas</span></div>
+  <h2>The wheel across three lives</h2>
+  <p class="lede">The Abhidhamma reads the twelve links of dependent origination across three lives and hangs a whole vocabulary on them: three periods, twelve factors, twenty modes, three connections, four groups, three rounds and two roots. The wheel shows all seven at once.</p>
+  <div class="fig"><svg id="wheel" viewBox="0 0 680 600" style="max-width:640px;margin:0 auto" role="img" aria-label="Wheel of the twelve links with periods, groups, connections, rounds and roots"></svg></div>
+  <div class="legend" style="justify-content:center">
+    <span><i style="background:var(--bad)"></i>round of defilements</span>
+    <span><i style="background:var(--nama)"></i>round of kamma</span>
+    <span><i style="background:var(--rupa-mark)"></i>round of results</span>
+    <span><i style="background:var(--sheet);border:2.5px solid var(--ink)"></i>root: ignorance, craving</span>
+    <span>◆ connection</span>
+  </div>
+  <div class="modes" id="modes"></div>
+  <p class="cap">Links 8–10, craving, clinging and becoming, arise in the javanas of Plate 7 <a class="xr" href="#p7">→ 7</a>. Links 3–7 are the results that Plate 10 follows across the hinge between lives <a class="xr" href="#p10">→ 10</a>.</p>
+  <div class="pf"><span>Source: Bodhi, <i>CMA</i> VIII §3–10; Paṭisambhidāmagga on the twenty modes</span><span class="pg"></span></div>
+</section>
+
+<!-- ================= LEVEL 4 IN 3D ================= -->
+<section class="sheet d3p" id="D4" data-level="4">
+  <div class="ph"><span><b>Level IV</b> · In 3D</span><span>Abhidhamma Atlas</span></div>
+  <div class="nav"><a class="lvb" href="#L4" style="background:var(--lv4);border:0"><b>IV</b>Relations</a><span>Models for plates <a href="#p8">8</a>–<a href="#p9">9</a></span></div>
+  <h2>Relations in 3D</h2>
+  <p class="lede">The wheel of Plate 9 opened into a helix that climbs through three lives, and the 24 conditions of Plate 8 drawn as arcs between mind, matter and concepts.</p>
+  <div class="btnrow ctl3" id="d4-helix-btns" role="group" aria-label="Colour by"></div>
+  <div class="viz3d" id="d4-helix"><span class="hint3">drag to turn</span></div>
+  <p class="cap">Red links are defilements, indigo kamma, turmeric results; becoming (10) is both kamma and result. The three rings are the connections between the four groups, and the halos mark the two roots, ignorance and craving. At rebirth, the Visuddhimagga says, mentality supports the mind base, the sixth of the six bases, in at least seven ways: conascence, mutuality, support, association, result, presence and non-disappearance. It supports the five physical bases in fewer ways, since association holds only between mental states.</p>
+  <div class="cols">
+    <div class="fig"><div class="viz3d" id="d4-comp"><span class="hint3">drag to turn</span></div></div>
+    <div class="fig"><div class="btnrow ctl3 sm" id="d4-comp-btns" role="group" aria-label="Family"></div><div class="box" id="d4-comp-info"></div></div>
+  </div>
+  <div class="pf"><span>Sources: Bodhi, <i>CMA</i> VIII; Visuddhimagga XVII</span><span class="pg"></span></div>
+</section>
+
+<!-- ================= STORIES 4 ================= -->
+<section class="sheet stories" id="S4" data-level="4"></section>
+
+<!-- ================= LEVEL 5 ================= -->
+<section class="sheet level" id="L5" data-level="5"></section>
+
+<section class="sheet" id="p10">
+  <div class="ph"><span><b>Plate 10</b> · Chapter V · Kamma</span><span>Abhidhamma Atlas</span></div>
+  <h2>Kamma, death and rebirth</h2>
+  <p class="lede">Kamma is volition (<i>cetanā</i>). The Saṅgaha sorts it four ways, each answering a different question. Then it follows the last moments of a life into the first moment of the next.</p>
+  <div class="kgrid" id="kgrid"></div>
+  <div class="fig">
+    <div class="lab">When a javana's kamma can ripen</div>
+    <svg id="ripen" viewBox="0 0 680 124" role="img" aria-label="Seven javanas: the first ripens in this life, the seventh in the next, the middle five in any later life"></svg>
+    <p class="cap">If the right conditions never come in time, the kamma becomes defunct (<i>ahosi</i>). These are the seven javanas of Plate 7 <a class="xr" href="#p7">→ 7</a>.</p>
+  </div>
+  <div class="fig">
+    <div class="lab">The hinge between two lives</div>
+    <svg id="death" viewBox="0 0 680 150" role="img" aria-label="The last process of one life, death consciousness, then rebirth-linking in the next life taking the same object"></svg>
+  </div>
+  <div class="cols3">
+    <div class="box"><h3>Three signs at death</h3><p class="small">The last process takes one of three objects: a <b>kamma</b> remembered, a <b>kamma sign</b> (a sight or sound linked with it, such as flowers offered at a shrine), or a <b>destiny sign</b> (an image of the coming birth).</p></div>
+    <div class="box"><h3>Four causes of death</h3><p class="small">End of the lifespan, end of the productive kamma, both together, or a destructive kamma cutting in. A lamp goes out the same four ways: the wick is used up, the oil is used up, both run out, or a gust of wind blows it out.</p></div>
+    <div class="box"><h3>Nothing travels across</h3><p class="small">Rebirth-linking is conditioned by the past life, but nothing passes over. The Visuddhimagga's images: an echo, the light of a lamp, the impression of a seal, a reflection in a mirror.</p></div>
+  </div>
+  <div class="pf"><span>Sources: Bodhi, <i>CMA</i> V; Nārada, <i>A Manual of Abhidhamma</i> V; Visuddhimagga XVII</span><span class="pg"></span></div>
+</section>
+
+<section class="sheet" id="p10b">
+  <div class="ph"><span><b>Plate 10b</b> · continued · Chapter V · Kamma and its fruit</span><span>Abhidhamma Atlas</span></div>
+  <h2>From kamma to its results</h2>
+  <p class="lede">A volition ceases at once, but it can ripen later in two ways: as the first citta of a new life, rebirth-linking, and as resultant cittas within a life. The Saṅgaha matches each kind of kamma to the rebirth it can give. Twenty kinds of rebirth-linking cover all thirty-one planes.</p>
+  <div class="fig"><div class="scroll" tabindex="0"><svg id="kr-flow" viewBox="0 0 680 330" role="img" aria-label="Seven kinds of kamma, the rebirth-linking citta each can give, and the planes it leads to"></svg></div></div>
+  <div class="cols">
+    <div class="box"><h3>Results within a life</h3><div id="kr-results"></div><p class="small">Wholesome kamma that is weak in its roots or in the way it was done gives fewer kinds of result. Unwholesome kamma gives the seven unwholesome resultants (13–19); the restlessness citta (12) gives results in life but no rebirth.</p></div>
+    <div class="box tint"><h3>Jhāna and the fine-material planes</h3><ul class="tight small" id="kr-jhana"></ul><p class="small">Within each realm, a jhāna developed weakly, moderately or fully leads to its lowest, middle or highest plane.</p></div>
+  </div>
+  <div class="box"><h3>Why the kind of rebirth matters for practice</h3><ul class="tight small" id="kr-persons"></ul></div>
+  <div class="pf"><span>Sources: Bodhi, <i>CMA</i> IV (persons), V (rebirth-linking; kamma and its results); Visuddhimagga XVII</span><span class="pg"></span></div>
+</section>
+
+<section class="sheet" id="p11">
+  <div class="ph"><span><b>Plate 11</b> · Chapter V · Bhūmi</span><span>Abhidhamma Atlas</span></div>
+  <h2>Thirty-one planes, on a scale of deep time</h2>
+  <p class="lede">The planes match the levels of mind: each jhāna has its own heavens. Plotted on a logarithmic scale, most of the lifespans rise in doublings. The chart also shows which planes hold mind only or matter only.</p>
+  <div class="fig"><div class="scroll" tabindex="0"><svg id="planes" viewBox="0 0 680 716" style="max-width:655px;margin:0 auto" role="img" aria-label="31 planes of existence with lifespans on logarithmic scales"></svg></div></div>
+  <div class="legend"><span><i style="background:var(--nama);border-radius:50%"></i>mind only (immaterial planes)</span><span><i style="background:var(--rupa-mark)"></i>matter only (non-percipient beings)</span><span><i style="background:linear-gradient(90deg,var(--nama) 50%,var(--rupa-mark) 50%)"></i>mind and matter</span></div>
+  <p class="cap">Brahmā lifespans are in great aeons (<i>mahākappa</i>). The first three are given in the texts as fractions of an incalculable aeon, a quarter of a great aeon, and are converted here. Deva lifespans are in human years: 50 human years make one day of the Four Great Kings, and each higher heaven doubles both the day and the lifespan. Jhāna kamma ripens in the Brahmā planes <a class="xr" href="#p12">→ 12</a>.</p>
+  <div class="pf"><span>Sources: Bodhi, <i>CMA</i> V; Nārada, <i>A Manual of Abhidhamma</i> V; Rewata Dhamma, table of realms</span><span class="pg"></span></div>
+</section>
+
+<!-- ================= LEVEL 5 IN 3D ================= -->
+<section class="sheet d3p" id="D5" data-level="5">
+  <div class="ph"><span><b>Level V</b> · In 3D</span><span>Abhidhamma Atlas</span></div>
+  <div class="nav"><a class="lvb" href="#L5" style="background:var(--lv5);border:0"><b>V</b>Lives and worlds</a><span>Models for plates <a href="#p10">10</a>–<a href="#p11">11</a></span></div>
+  <h2>Thirty-one planes as a world-mountain</h2>
+  <p class="lede">The traditional cosmos, stacked. The woeful states lie below the human world. Mount Sineru rises from it: the Four Great Kings dwell on its slopes and the Thirty-three on its summit. The higher heavens and the Brahmā worlds rest above it in space, and the four immaterial planes, drawn as empty rings, have no matter at all.</p>
+  <div class="viz3d" id="d5-view"><span class="hint3">drag to turn</span></div>
+  <div class="cols3">
+    <div class="box"><h3>Floors of mind</h3><p class="small">Each floor of the Brahmā worlds corresponds to a jhāna; beings are reborn there by the kamma of that jhāna. The higher the floor, the longer the life and the subtler the mind.</p></div>
+    <div class="box"><h3>Mind without matter</h3><p class="small">In the four immaterial planes there is no body and no base: cittas arise with no physical support. Among the non-percipient beings, the reverse: a body with no mind at all.</p></div>
+    <div class="box"><h3>Ring widths</h3><p class="small">Disc widths are schematic, not measured. For the actual lifespans, from nine million human years to 84,000 aeons, see Plate 11.</p></div>
+  </div>
+  <div class="pf"><span>Sources: Bodhi, <i>CMA</i> V; commentaries on Sineru</span><span class="pg"></span></div>
+</section>
+
+<!-- ================= STORIES 5 ================= -->
+<section class="sheet stories" id="S5" data-level="5"></section>
+
+<!-- ================= LEVEL 6 ================= -->
+<section class="sheet level" id="L6" data-level="6"></section>
+
+<section class="sheet" id="p12">
+  <div class="ph"><span><b>Plate 12</b> · Chapter IX · Samatha</span><span>Abhidhamma Atlas</span></div>
+  <h2>Forty meditation subjects</h2>
+  <p class="lede">Each subject is fitted to a temperament and reaches a known depth. The colour bar on each card shows the temperament it suits. The five boxes show how many jhānas it can reach.</p>
+  <div class="legend" id="temper-legend"></div>
+  <div style="display:grid;gap:6px" id="medgrid"></div>
+  <div class="cols">
+    <div class="fig">
+      <div class="lab">Three signs, three stages (earth kasiṇa)</div>
+      <svg id="signs" viewBox="0 0 330 150" role="img" aria-label="Preliminary sign, learning sign and counterpart sign"></svg>
+    </div>
+    <div class="box tint">
+      <h3>Reading the depths</h3>
+      <ul class="tight small">
+        <li><b>Access only</b> (10 subjects): the object is too varied or too deep in thought to settle into absorption.</li>
+        <li><b>First jhāna only</b> (11): foulness and the parts of the body need applied thought to hold the object.</li>
+        <li><b>Four jhānas</b> (3): loving-kindness, compassion and appreciative joy come with pleasant feeling, so they stop before the fifth.</li>
+        <li><b>Fifth only</b> (1): equanimity as a divine abiding needs neutral feeling.</li>
+        <li><b>All five</b> (11): the kasiṇas and the breath. The immaterial four build on the fifth. <a class="xr" href="#p11">→ 11</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="pf"><span>Sources: Bodhi, <i>CMA</i> IX; Visuddhimagga III–IV</span><span class="pg"></span></div>
+</section>
+
+<section class="sheet" id="p13">
+  <div class="ph"><span><b>Plate 13</b> · Chapter IX · Vipassanā</span><span>Abhidhamma Atlas</span></div>
+  <h2>The tree of purification</h2>
+  <p class="lede">The Visuddhimagga pictures the path of insight as a tree. The things to be understood are the soil. Virtue and a concentrated mind are the roots. The five purifications of wisdom are the trunk, and the insight knowledges grow up it.</p>
+  <div class="fig"><svg id="tree" viewBox="0 0 680 560" style="max-width:600px;margin:0 auto" role="img" aria-label="Tree of the seven purifications, with insight knowledges along the trunk and path and fruit at the crown"></svg></div>
+  <div class="cols" style="grid-template-columns:minmax(0,1.35fr) minmax(0,1fr)">
+    <div class="fig">
+      <div class="lab">Ten fetters and the four paths</div>
+      <table class="fet" id="fetters"></table>
+      <div class="legend"><span><i style="background:var(--nama)"></i>abandoned</span><span><i style="background:repeating-linear-gradient(90deg,var(--nama) 0 3px,transparent 3px 6px);border:1px solid var(--nama)"></i>weakened</span></div>
+    </div>
+    <div class="box tint">
+      <h3>Three doors to liberation</h3>
+      <p class="small">Insight that ends in path enters by one of three doors, set by the characteristic it dwelt on most.</p>
+      <ul class="tight small">
+        <li>Impermanence → the <b>signless</b> (<i>animitta</i>)</li>
+        <li>Suffering → the <b>desireless</b> (<i>appaṇihita</i>)</li>
+        <li>Non-self → the <b>void</b> (<i>suññata</i>)</li>
+      </ul>
+      <p class="small" style="margin-top:4px">At the crown, a single moment of path knowledge is followed by two or three moments of fruition, both taking Nibbāna as their object.</p>
+    </div>
+  </div>
+  <div class="pf"><span>Sources: Bodhi, <i>CMA</i> IX; Visuddhimagga XIV, XVIII–XXII</span><span class="pg"></span></div>
+</section>
+
+<section class="sheet" id="p13b">
+  <div class="ph"><span><b>Plate 13b</b> · continued · Sacca, magga</span><span>Abhidhamma Atlas</span></div>
+  <h2>The four noble truths and the eightfold path</h2>
+  <p class="lede">In the first sermon the Buddha said that only when he knew each truth in three ways, twelve aspects in all, did he claim awakening (SN 56.11): this is the truth; this is what is to be done with it; this has been done. The fourth truth, the path, is eight factors. The Abhidhamma names the mental factor each one is, and shows how, in the moment of path consciousness, all of them arise together with Nibbāna as their object.</p>
+  <div class="fig"><div class="scroll" tabindex="0"><svg id="truths-grid" viewBox="0 0 680 200" role="img" aria-label="The four noble truths, each known in three ways"></svg></div></div>
+  <div class="fig"><div class="scroll" tabindex="0"><svg id="path-wheel" viewBox="0 0 680 270" role="img" aria-label="The eightfold path as a wheel of eight spokes in three trainings, and how its factors converge in path consciousness"></svg></div></div>
+  <div class="cols">
+    <div class="box tint"><h3>Mundane and supramundane path</h3><p class="small">In daily practice the factors arise in different moments: right speech when refraining from a lie, mindfulness on the cushion, view while reflecting. They are the mundane path. In the path moment all eight arise in one citta (seven in paths of the second jhāna and above, which lack right intention), and the defilements that path cuts are gone for good (Plate 13).</p></div>
+    <div class="box"><h3>Three trainings, in order</h3><p class="small">Virtue steadies conduct, concentration steadies the mind, wisdom sees; the path is often listed beginning with view because view guides the rest (MN 117). The sequence on Plate 13's tree, from the soil of virtue to the crown of knowledge, is this same path unfolding in time.</p></div>
+  </div>
+  <div class="pf"><span>Sources: SN 56.11; MN 117; MN 44; Vibhaṅga (sacca, magga); Bodhi, <i>CMA</i> VII §§29, 39–40, IX</span><span class="pg"></span></div>
+</section>
+
+<!-- ================= LEVEL 6 IN 3D ================= -->
+<section class="sheet d3p" id="D6" data-level="6">
+  <div class="ph"><span><b>Level VI</b> · In 3D</span><span>Abhidhamma Atlas</span></div>
+  <div class="nav"><a class="lvb" href="#L6" style="background:var(--lv6);border:0"><b>VI</b>Practice</a><span>Models for plates <a href="#p12">12</a>–<a href="#p13">13</a></span></div>
+  <h2>Practice as a climb</h2>
+  <p class="lede">Calm rises through stacked floors of absorption, the first five each with fewer factors than the one below; the immaterial floors keep the fifth jhāna's two. Insight rises beside them: it can start from any floor, or from none, and only insight passes the top of calm into the supramundane, where four paths, each taking Nibbāna as object, cut the ten fetters.</p>
+  <div class="btnrow ctl3" id="d6-fet-btns" role="group" aria-label="Attainment"></div>
+  <div class="viz3d" id="d6-climb"><span class="hint3">drag to turn · choose a stage</span></div>
+  <p class="cap" id="d6-fet-cap"></p>
+  <div class="cols" style="align-items:start">
+    <div class="fig"><div class="lab">The 37 requisites are 14 states</div><div id="d6-req"></div></div>
+    <div class="box tint"><h3>Reading the climb</h3><p class="small">A factor's post ends on the last floor that has it: initial and sustained application go first, then zest, then happiness, which gives way to equanimity; one-pointedness runs to the top. The immaterial floors keep the fifth jhāna's two factors and change only the object; drawn as empty frames, they are still planes of existence (D5). Dashed links: insight may start from any floor; dry insight starts from the ground with momentary concentration.</p><p class="small">The table: each dot is one place a state appears among the 37; energy appears nine times, mindfulness eight, wisdom five, concentration four, faith twice, the other nine once. Thirteen are mental factors; one, as a base of success, is citta itself.</p></div>
+  </div>
+  <div class="pf"><span>Sources: Bodhi, <i>CMA</i> I (jhāna factors), VII (requisites), IX (calm, insight, paths); Nārada, <i>Manual</i> VII</span><span class="pg"></span></div>
+</section>
+
+<!-- ================= STORIES 6 ================= -->
+<section class="sheet stories" id="S6" data-level="6"></section>
+
+<!-- ================= LEVEL 7 ================= -->
+<section class="sheet level" id="L7" data-level="7"></section>
+
+<!-- ================= PLATE 14: ONE MOMENT ================= -->
+<section class="sheet" id="p14">
+  <div class="ph"><span><b>Plate 14</b> · Synthesis</span><span>Abhidhamma Atlas</span></div>
+  <h2>One moment, every lens</h2>
+  <p class="lede">Every plate so far describes the same experience from a different angle. Here one ordinary moment, seeing a ripe mango and wanting it, is read through ten of them at once. Each lens points back to the plate that teaches it.</p>
+  <div class="fig p14-fig"><svg id="lens" viewBox="0 0 680 571" role="group" aria-label="One moment of seeing and wanting a mango, read through ten plates; each card shows the plate drawing with the moment marked"></svg><svg id="lens-v" viewBox="0 0 334 1114" role="group" aria-label="The same ten lenses, one per row"></svg></div>
+  <div class="box tint">
+    <h3>Your turn</h3>
+    <p class="small">Pick one moment from today, such as hearing your name or tasting something sweet, and answer each lens in a line.</p>
+    <div class="worksheet" id="worksheet"></div>
+  </div>
+  <div class="pf"><span>Draws on plates 2–13</span><span class="pg"></span></div>
+</section>
+
+
+<section class="sheet" id="p14b">
+  <div class="ph"><span><b>Plate 14b</b> · continued · A second worked example</span><span>Abhidhamma Atlas</span></div>
+  <h2>Two moments, side by side</h2>
+  <p class="lede">The same ripe mango, seen twice. In the first moment it is wanted; in the second it is given away. Up to determining, the two processes are identical, moment for moment. They part at the javanas, and everything downstream of that, roots, kamma, the turn of the wheel, parts with them. Contrast is how the categories become clear.</p>
+  <div class="fig"><div class="scroll" tabindex="0"><svg id="tm-strips" viewBox="0 0 680 120" role="img" aria-label="Two seventeen-moment processes, identical until the javanas, which are unwholesome in the first and wholesome in the second"></svg></div></div>
+  <div class="scroll" tabindex="0"><table class="twom" id="tm-table"></table></div>
+  <div class="cols">
+    <div class="box tint"><h3>What the contrast teaches</h3><ul class="tight small">
+      <li>Seeing is never the problem: the first eight moments are the same in both.</li>
+      <li>The same feeling, joy, can go with opposite qualities; the roots decide.</li>
+      <li>Kamma is made only where the processes differ, in the javanas.</li>
+    </ul></div>
+    <div class="box"><h3>Try it on your own day</h3><p class="small">Take one ordinary moment of liking and imagine its wholesome twin. Which rows of this table change, and which stay the same?</p></div>
+  </div>
+  <div class="pf"><span>Sources: Bodhi, <i>CMA</i> I–V; Atthasālinī on attention; MA 1:201 on covetousness</span><span class="pg"></span></div>
+</section>
+
+<section class="sheet" id="p15">
+  <div class="ph"><span><b>Plate 15</b> · Comparison</span><span>Abhidhamma Atlas</span></div>
+  <h2>Other maps of the same ground</h2>
+  <p class="lede">Three Buddhist schools analysed experience into ultimate elements and reached different lists. Comparing them shows which choices were open. Counted the same way, with citta as one element, the Theravāda list has 82 items.</p>
+  <div class="fig"><div class="scroll" tabindex="0"><svg id="compare" viewBox="0 0 680 166" role="img" aria-label="Stacked bars comparing Theravāda 82, Sarvāstivāda 75 and Yogācāra 100 elements"></svg></div>
+    <div class="legend"><span><i style="background:var(--nama)"></i>citta · consciousness</span><span><i style="background:var(--nama-2)"></i>cetasika · mental factors</span><span><i style="background:var(--rupa-mark)"></i>rūpa · matter</span><span><i style="background:var(--g3)"></i>formations dissociated from mind</span><span><i style="background:var(--nib)"></i>unconditioned</span></div></div>
+  <div class="cols3">
+    <div class="box"><h3>Time</h3><p class="small">The Sarvāstivāda held that dhammas exist in the past, present and future; hence its name, “the doctrine that all exists”. The Theravāda Kathāvatthu argues against this. For the Theravāda only the present moment is real.</p></div>
+    <div class="box"><h3>A fifth category</h3><p class="small">Northern lists add “formations dissociated from mind”: possession, life force, the arising and decay of things, words. The Theravāda has no such category. It treats most of these as concepts, or as aspects of matter and mind.</p></div>
+    <div class="box"><h3>The base of mind</h3><p class="small">Yogācāra counts eight consciousnesses, including a storehouse consciousness (<i>ālaya-vijñāna</i>) that carries seeds of past action. The Theravāda's life-continuum (<i>bhavaṅga</i>) is often compared with it, though it is momentary and stores nothing.</p></div>
+  </div>
+  <div class="box">
+    <h3>Research notes</h3>
+    <p class="small">This atlas was built from two rounds of research. The first surveyed the canonical books, the commentaries and manuals, and modern studies, looking for how each explains the material. The second checked the specific claims used here: the groupings of the 24 conditions, the plane lifespans, the wording and source of each simile, and the counts of the northern schools. Where the texts give a range, or where a figure was confirmed only by secondary sources, the plate says so.</p>
+    <p class="src">Principal sources: Bhikkhu Bodhi (ed.), <i>A Comprehensive Manual of Abhidhamma</i> (BPS, 1993); Nārada, <i>A Manual of Abhidhamma</i>; Bhikkhu Ñāṇamoli (tr.), <i>The Path of Purification</i>; <i>The Expositor</i> (Atthasālinī), tr. Pe Maung Tin; <i>Milindapañha</i>; Nyanaponika, <i>Abhidhamma Studies</i>; Y. Karunadasa, <i>The Theravāda Abhidhamma</i>; L. S. Cousins (1992) on vitakka and vicāra; M. Heim on nāmarūpa in Buddhaghosa; Agganyani's Paṭṭhāna overview; Encyclopedia of Buddhism entries on the 75 and 100 dharmas.</p>
+  </div>
+  <div class="pf"><span>Sources: Abhidharmakośa; Vasubandhu, <i>Lucid Introduction to the One Hundred Dharmas</i>; Kathāvatthu I</span><span class="pg"></span></div>
+</section>
+
+<!-- ================= LEVEL 7 IN 3D ================= -->
+<section class="sheet d3p" id="D7" data-level="7">
+  <div class="ph"><span><b>Level VII</b> · In 3D</span><span>Abhidhamma Atlas</span></div>
+  <div class="nav"><a class="lvb" href="#L7" style="background:var(--lv7);border:0"><b>VII</b>Synthesis</a><span>Models for plates <a href="#p14">14</a>–<a href="#p15">15</a> and the threads</span></div>
+  <h2>One moment, every lens</h2>
+  <p class="lede">The mango moment of Plate 14 (seeing a ripe mango and wanting it) as five transparent layers on one time axis of seventeen mind-moments: matter, citta, its factors, the conditions that link them, and kamma. Everything the atlas teaches happens at once; the layers show it lined up. Choose a moment to cut through all five.</p>
+  <div class="btnrow ctl3 sm" id="d7-btns" role="group" aria-label="Moment"></div>
+  <div class="viz3d" id="d7-view"><span class="hint3">drag to turn · choose a moment</span></div>
+  <div class="legend"><span><i style="background:var(--nama)"></i>universal factors</span><span><i style="background:var(--nama-2)"></i>occasional</span><span><i style="background:var(--nama);opacity:.4"></i>beautiful</span><span><i style="background:var(--bad)"></i>unwholesome</span><span><i style="background:var(--g5)"></i>object condition</span><span><i style="background:var(--g4)"></i>prenascence</span><span><i style="background:var(--g1)"></i>proximity, repetition</span><span><i style="background:var(--kamma)"></i>kamma</span></div>
+  <p class="cap" id="d7-cap"></p>
+  <div class="cols">
+    <div class="box"><h3>What lines up</h3><p class="small">Red appears in the factors only at the javanas, and the same seven moments are the only ones that send kamma forward; every other moment of the process is a result arriving or a functional step. The object's matter lasts exactly as long as the process, seventeen moments, and every citta but seeing adds mind-born matter.</p></div>
+    <div class="box"><h3>How to use it</h3><p class="small">Cut at each moment and say all five lenses aloud before reading the caption. The threads page follows eleven ideas across all the plates; this model takes the opposite cut: one moment, every idea at once.</p></div>
+  </div>
+  <div class="pf"><span>Sources: Bodhi, <i>CMA</i> II (factors), III–IV (process), V (kamma), VI (matter), VIII (conditions)</span><span class="pg"></span></div>
+</section>
+
+<!-- ================= STORIES 7 ================= -->
+<section class="sheet stories" id="S7" data-level="7"></section>
+
+<!-- ================= THREADS AND GLOSSARY ================= -->
+<section class="sheet" id="threads">
+  <div class="ph"><span><b>Threads</b> · Level VII review</span><span>Abhidhamma Atlas</span></div>
+  <h2>Threads: following one idea through the atlas</h2>
+  <p class="lede">Eleven key ideas run through many plates. Each coloured line is one idea; each stop is a plate where it appears. Plate 14 is the interchange where most of them meet. To review, pick a line and read its plates in order. The same colours mark the threads in the strip at the top of every plate.</p>
+  <div class="fig"><div class="scroll"><svg id="metro" viewBox="0 0 680 360" role="group" aria-label="Metro-style map of eleven key ideas running across fifteen plates"></svg></div></div>
+  <div class="lab">Reading alongside the Manual · Bodhi's <i>Comprehensive Manual</i>, chapter and section for each plate</div>
+  <div class="cma" id="cma"></div>
+  <p class="cap">Section ranges are approximate where the chapter is certain but the paragraph numbers were not checked against the printed book.</p>
+  <div class="pf"><span>Abhidhamma Atlas · threads and reading</span><span class="pg"></span></div>
+</section>
+
+<section class="sheet" id="glossary">
+  <div class="ph"><span><b>Glossary</b> · 1 of 2</span><span>Abhidhamma Atlas</span></div>
+  <h2>Glossary</h2>
+  <p class="lede">One hundred and fifty terms, each with the plate where it is taught. Terms with several senses are listed once for each sense. On screen, a Pāli word with a dotted underline shows its definition when you point at it.</p>
+  <div class="pron" id="pron" aria-label="How to pronounce Pāli"></div>
+  <div class="gloss" id="gloss"></div>
+  <div class="pf"><span>Abhidhamma Atlas · glossary</span><span class="pg"></span></div>
+</section>
+
+<section class="sheet" id="glossary-2">
+  <div class="ph"><span><b>Glossary</b> · 2 of 2</span><span>Abhidhamma Atlas</span></div>
+  <div class="gloss" id="gloss-2"></div>
+  <div class="pf"><span>Abhidhamma Atlas · glossary</span><span class="pg"></span></div>
+</section>
+
+<!-- ================= STUDY TOOLS ================= -->
+<section class="sheet" id="explorer">
+  <div class="ph"><span><b>Study tools</b> · One dhamma, many lenses</span><span>Abhidhamma Atlas</span></div>
+  <h2>One dhamma, many lenses</h2>
+  <p class="lede">The Abhidhamma's own way of knowing a thing is to pass it through every list: is it mind or matter, which aggregate, which base, which element, which truth, wholesome or not, a result or a cause, a root or not. The Dhammasaṅgaṇī opens with exactly such lists, its matrix (<i>mātikā</i>) of triads and dyads. Read a row across to know one dhamma from every side; read a column down to see how one list sorts them all.<span class="web"> Choose a row to open that dhamma.</span></p>
+  <div class="scroll"><table class="lens" id="explorer-table"></table></div>
+  <div class="ex-notes" id="explorer-notes"></div>
+  <div class="cm-panel web" id="explorer-panel" aria-live="polite"></div>
+  <div class="cols">
+    <div class="box tint"><h3>Patterns to look for</h3><ul class="tight small">
+      <li>Every mundane dhamma, even a wholesome citta, belongs to the truth of suffering: it is conditioned and it passes.</li>
+      <li>Only greed is the truth of origin, as craving; only Nibbāna is cessation.</li>
+      <li>Matter and Nibbāna take no object; every citta and factor does.</li>
+      <li>Feeling and perception have aggregates of their own; every other factor is a formation.</li>
+    </ul></div>
+    <div class="box"><h3>Use it slowly</h3><p class="small">Take one row a day. Say it aloud as a sentence, find the dhamma's identity card, and carry its Notice prompt through the day. In seventeen days you will have met every reality the atlas teaches, from every side.</p></div>
+  </div>
+  <div class="pf"><span>Sources: Dhammasaṅgaṇī mātikā; Vibhaṅga; Bodhi, <i>CMA</i> I, II, VI, VII</span><span class="pg"></span></div>
+</section>
+
+<section class="sheet" id="idcards">
+  <div class="ph"><span><b>Study tools</b> · Identity cards</span><span>Abhidhamma Atlas</span></div>
+  <h2>Sixteen identity cards</h2>
+  <p class="lede">Four marks for each dhamma, as the commentaries give them (Plate 2 <a class="xr" href="#p2">→ 2</a>). Learn one card a day. Then, when that dhamma is present, try to recognise it by its characteristic rather than by its name.</p>
+  <div class="idgrid" id="idcards-grid"></div>
+  <p class="cap">Wording condensed from Bodhi's <i>Comprehensive Manual</i> (chapters II and VI), which follows the Atthasālinī and the Visuddhimagga (XIV, XVI); Nibbāna has no proximate cause because nothing conditions it. Translations differ; check a term against the source you study from.</p>
+  <div class="pf"><span>Abhidhamma Atlas · identity cards</span><span class="pg"></span></div>
+</section>
+
+<section class="sheet" id="deck">
+  <div class="ph"><span><b>Study tools</b> · Review deck</span><span>Abhidhamma Atlas</span></div>
+  <h2>A review deck in five boxes</h2>
+  <p class="lede">Eighty-one questions. Six recall cards for each level are printed below; on screen, 39 more ask why, classify and relate. Answer before you look: the effort of recalling is what fixes the answer. A card you know moves up a box and comes back later; a card you miss goes back to box 1 and comes back tomorrow. Add a level's cards only when you reach it.</p>
+  <div class="deck web" id="deck-app">
+    <div class="btnrow sm" id="deck-lv" role="group" aria-label="Cards up to level"></div>
+    <div id="deck-card" aria-live="polite"></div>
+    <div class="dboxes" id="deck-boxes"></div>
+    <div class="btnrow sm"><button type="button" class="pill" data-act="list">Show every question and answer</button><button type="button" class="pill" data-act="reset">Start over</button>
+      <span id="deck-confirm" class="small" hidden>Forget all progress in this browser? <button type="button" class="pill" data-act="reset-yes">Yes, start over</button> <button type="button" class="pill" data-act="reset-no">Keep it</button></span></div>
+  </div>
+  <div class="leitner"><svg viewBox="0 0 680 72" role="img" aria-label="Five boxes: daily, every 3 days, weekly, every 2 weeks, monthly; known cards move right, missed cards go back to box 1">
+    <g id="leitner-g"></g></svg></div>
+  <div class="decklist" id="deck-list" hidden></div>
+  <div class="pf"><span>Abhidhamma Atlas · review deck · progress stays in this browser</span><span class="pg"></span></div>
+</section>
+
+</main>
+
+
+<script src="js/data.js" data-inline></script>
+<script src="js/plates.js" data-inline></script>
+<script src="js/learn.js" data-inline></script>
+<script src="js/maps.js" data-inline></script>
+<script src="js/study.js" data-inline></script>
+<script src="js/nav.js" data-inline></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="js/models3d.js" data-inline></script>
+</body>
+</html>

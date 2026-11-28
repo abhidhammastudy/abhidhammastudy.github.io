@@ -1,0 +1,1 @@
+import{c as t,e as s}from"./progress.BsP3mCOy.js";t();const e=document.querySelector("[data-done]");document.querySelector("[data-reset]")?.addEventListener("click",()=>{s(),t(),e&&(e.textContent="Cleared",e.classList.add("on"),setTimeout(()=>{e.classList.remove("on")},2200))});
